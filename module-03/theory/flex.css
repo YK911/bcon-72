@@ -1,7 +1,7 @@
 /* #region */
 .wrapper {
   width: 800px;
-  min-height: 600px;
+  /* min-height: 600px; */
   padding: 40px;
   margin: 0 auto;
   margin-top: 60px;
@@ -30,8 +30,26 @@
   FLEX BOX
 \*=====================================*/
 .wrapper {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 40px;
+
   /* Default properties */
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
+  /* align-items: stretch; */
+  /* flex-wrap: nowrap; */
+  /* align-content: stretch; */
 }
 .item {
+  width: calc((100% - 40px * 3) / 4);
+  /* flex-basis: 100px; */
+  /* min-width: 200px;
+  max-width: 120px; */
   /* Default properties */
+  /* flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 1; */
 }

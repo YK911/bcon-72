@@ -40,7 +40,7 @@
       <div class="container">
         <nav class="header-nav">
           <a class="logo header-logo" href="./index.html">
-            <span class="logo-accent">SIMPLY</span> CHOCOLATE
+            <span class="logo-accent">SIMPLY</span>&nbsp;CHOCOLATE
             <img
               class="logo-img"
               src="./images/icons/logo.svg"
@@ -125,24 +125,28 @@
             Treat yourself or a loved one to our&nbsp;finest ingredients for a
             moment of pure delight!
           </h1>
-          <ul class="hero-controls">
-            <li class="hero-item">
-              <button class="btn btn-accent" type="button">Buy now</button>
-            </li>
-            <li class="hero-item">
-              <button class="btn btn-light" type="button">How it’s made</button>
-            </li>
-          </ul>
-          <a class="hero-link" href="">
-            scroll down
-            <img
-              class="hero-link-icon"
-              src="./images/icons/arrow-down.svg"
-              alt="Arrow down"
-              width="22"
-              height="22"
-            />
-          </a>
+          <div class="hero-wrapper">
+            <ul class="hero-controls">
+              <li class="hero-item">
+                <button class="btn btn-accent" type="button">Buy now</button>
+              </li>
+              <li class="hero-item">
+                <button class="btn btn-light" type="button">
+                  How it’s made
+                </button>
+              </li>
+            </ul>
+            <a class="hero-link" href="">
+              scroll down
+              <img
+                class="hero-link-icon"
+                src="./images/icons/arrow-down.svg"
+                alt="Arrow down"
+                width="22"
+                height="22"
+              />
+            </a>
+          </div>
         </div>
       </section>
       <!-- #endregion Hero -->
@@ -271,37 +275,44 @@
           <h2 class="made-title section-title">
             How it’s <span class="accent">made</span>?
           </h2>
-          <img
-            class="made-pic"
-            src="./images/made/image.jpg"
-            alt="Pastry chef preparing chocolate cake"
-            width="600"
-            height="400"
-          />
-          <h3 class="made-subtitle">
-            Try our chocolates today and discover the perfect balance of flavor
-          </h3>
-          <ol class="made-list">
-            <li class="made-item">
-              Heat the milk in a saucepan without bringing it to a boil. Add
-              sugar and cocoa powder.
-            </li>
-            <li class="made-item">
-              At the same time, prepare a water bath. Melt the butter on it.
-            </li>
-            <li class="made-item">
-              "Mix" the milk mixture and already liquid butter. Mix thoroughly
-              with a silicone spatula so that the mass becomes uniform and
-              silky.
-            </li>
-            <li class="made-item">
-              Heat the mixture over low heat, letting it barely boil.
-            </li>
-            <li class="made-item">
-              Pour the chocolate into special containers (can be replaced with
-              ice molds). Allow to cool and harden.
-            </li>
-          </ol>
+          <div class="made-wrapper">
+            <div class="made-left-side">
+              <img
+                class="made-pic"
+                src="./images/made/image.jpg"
+                alt="Pastry chef preparing chocolate cake"
+                width="600"
+                height="400"
+              />
+            </div>
+            <div class="made-right-side">
+              <h3 class="made-subtitle">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </h3>
+              <ol class="made-list">
+                <li class="made-item">
+                  Heat the milk in a saucepan without bringing it to a boil. Add
+                  sugar and cocoa powder.
+                </li>
+                <li class="made-item">
+                  At the same time, prepare a water bath. Melt the butter on it.
+                </li>
+                <li class="made-item">
+                  "Mix" the milk mixture and already liquid butter. Mix
+                  thoroughly with a silicone spatula so that the mass becomes
+                  uniform and silky.
+                </li>
+                <li class="made-item">
+                  Heat the mixture over low heat, letting it barely boil.
+                </li>
+                <li class="made-item">
+                  Pour the chocolate into special containers (can be replaced
+                  with ice molds). Allow to cool and harden.
+                </li>
+              </ol>
+            </div>
+          </div>
         </div>
       </section>
       <!-- #endregion Made -->
@@ -505,7 +516,9 @@
               </p>
             </li>
           </ul>
-          <button class="btn btn-dark" type="button">Leave a review</button>
+          <button class="btn btn-dark reviews-btn" type="button">
+            Leave a review
+          </button>
         </div>
       </section>
       <!-- #endregion Reviews -->
@@ -513,92 +526,100 @@
     <!-- #region Footer -->
     <footer class="footer">
       <div class="container">
-        <p class="footer-slogan">
-          <span class="accent">Chocolate</span> a delicious cure for a bad day
-        </p>
-        <p class="footer-caption">Social networks</p>
-        <ul class="socials">
-          <li class="socials-item">
-            <a
-              class="socials-link"
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook link"
-            >
-              <img
-                class="socials-icon"
-                src="./images/icons/icon-facebook.svg"
-                alt="Facebook icon"
-                width="24"
-                height="24"
-              />
-            </a>
-          </li>
-          <li class="socials-item">
-            <a
-              class="socials-link"
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram link"
-            >
-              <img
-                class="socials-icon"
-                src="./images/icons/icon-instagram.svg"
-                alt="Instagram icon"
-                width="24"
-                height="24"
-              />
-            </a>
-          </li>
-          <li class="socials-item">
-            <a
-              class="socials-link"
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter link"
-            >
-              <img
-                class="socials-icon"
-                src="./images/icons/icon-twitter.svg"
-                alt="Twitter icon"
-                width="24"
-                height="24"
-              />
-            </a>
-          </li>
-        </ul>
-        <address class="footer-address">
-          <p class="footer-caption">Contact us</p>
-          <ul class="footer-contacts">
-            <li class="footer-contacts-item">
-              <a class="footer-contacts-link" href="tel:+380684439426">
-                +380 (68) 443-94-26
-              </a>
+        <div class="footer-top">
+          <p class="footer-slogan">
+            <span class="accent">Chocolate</span> a delicious cure for a bad day
+          </p>
+
+          <div class="footer-wrapper">
+            <p class="footer-caption">Social networks</p>
+            <ul class="socials">
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook link"
+                >
+                  <img
+                    class="socials-icon"
+                    src="./images/icons/icon-facebook.svg"
+                    alt="Facebook icon"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram link"
+                >
+                  <img
+                    class="socials-icon"
+                    src="./images/icons/icon-instagram.svg"
+                    alt="Instagram icon"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter link"
+                >
+                  <img
+                    class="socials-icon"
+                    src="./images/icons/icon-twitter.svg"
+                    alt="Twitter icon"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <address class="footer-address">
+            <p class="footer-caption">Contact us</p>
+            <ul class="footer-contacts">
+              <li class="footer-contacts-item">
+                <a class="footer-contacts-link" href="tel:+380684439426">
+                  +380 (68) 443-94-26
+                </a>
+              </li>
+              <li class="footer-contacts-item">
+                <a
+                  class="footer-contacts-link"
+                  href="mailto:simplychoc@gmail.com"
+                >
+                  simplychoc@gmail.com
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-bottom">
+          <ul class="footer-menu">
+            <li class="footer-menu-item">
+              <a class="footer-menu-link" href="#home">Home</a>
             </li>
-            <li class="footer-contacts-item">
-              <a
-                class="footer-contacts-link"
-                href="mailto:simplychoc@gmail.com"
-              >
-                simplychoc@gmail.com
-              </a>
+            <li class="footer-menu-item">
+              <a class="footer-menu-link" href="#made">How it’s made?</a>
+            </li>
+            <li class="footer-menu-item">
+              <a class="footer-menu-link" href="#reviews">Chocolate is loved</a>
             </li>
           </ul>
-        </address>
-        <ul class="footer-menu">
-          <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#home">Home</a>
-          </li>
-          <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#made">How it’s made?</a>
-          </li>
-          <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#reviews">Chocolate is loved</a>
-          </li>
-        </ul>
+        </div>
       </div>
     </footer>
     <!-- #endregion Footer -->
