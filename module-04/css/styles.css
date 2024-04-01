@@ -123,6 +123,9 @@ img {
 
   border-radius: 10px;
   border: 1px solid rgba(17, 17, 17, 0.1);
+
+  transition: 300ms ease-in;
+  transition-property: border-color;
 }
 .socials-link:hover,
 .socials-link:focus {
@@ -130,6 +133,8 @@ img {
 }
 .socials-icon {
   fill: #111111;
+  transition: 300ms ease-in;
+  transition-property: fill;
 }
 .socials-link:hover .socials-icon,
 .socials-link:focus .socials-icon {
@@ -144,6 +149,9 @@ img {
   font-weight: 600;
   border: 1px solid transparent;
   border-radius: 100px;
+
+  transition: 300ms ease-in;
+  transition-property: color, background-color, border-color;
 }
 .btn-accent {
   color: #fff;
@@ -175,6 +183,15 @@ img {
   color: #ffffff;
   background: #fd9222;
 }
+.scroll-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  color: #fd9222;
+}
+.scroll-to-top svg {
+  fill: currentColor;
+}
 /* #endregion */
 
 /* #region Header */
@@ -199,14 +216,20 @@ img {
 }
 .header-nav-item {
 }
+/* Normal state */
 .header-nav-link {
+  position: relative;
   display: block;
   padding: 32px 0;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.02em;
+
+  transition: 300ms ease-in;
+  transition-property: color;
 }
+/* Active state */
 .header-nav-link:hover,
 .header-nav-link:focus {
   color: #fd9222;
@@ -216,6 +239,10 @@ img {
 }
 .header-nav-link.active::after {
   content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+
   display: block;
   width: 100%;
   height: 4px;
@@ -274,6 +301,9 @@ img {
   line-height: 1.29;
   letter-spacing: -0.03em;
   color: #fff;
+
+  transition: 300ms ease-in;
+  transition-property: color;
 }
 .hero-link:hover,
 .hero-link:focus {
@@ -290,12 +320,46 @@ img {
 }
 .benefits-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 88px;
 }
 .benefits-item {
+  position: relative;
   width: 308px;
 }
+.benefits-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -45px;
+  transform: translateY(-50%);
+
+  display: block;
+  width: 1px;
+  height: 124px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.benefits-item:nth-child(3n)::after {
+  display: none;
+}
+/* .benefits-item:nth-child(3n + 2)::before,
+.benefits-item:nth-child(3n + 2)::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 62px);
+
+  display: block;
+  width: 1px;
+  height: 124px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.benefits-item:nth-child(3n + 2)::before {
+  left: -45px;
+}
+.benefits-item:nth-child(3n + 2)::after {
+  right: -45px;
+} */
 .benefits-wrapper {
   display: flex;
   justify-content: center;
@@ -331,6 +395,7 @@ img {
   gap: 32px;
 }
 .ingridients-item {
+  position: relative;
   width: calc((100% - 32px * 3) / 4);
   padding: 28px 23px;
   border-radius: 15px;
@@ -350,8 +415,14 @@ img {
   color: #fff;
 }
 .ingridients-icon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
   fill: none;
   stroke: #fff;
+}
+.ingridients-item:nth-child(2n) .ingridients-icon {
+  stroke: #fd9222;
 }
 .ingridients-ill {
 }
@@ -476,8 +547,41 @@ img {
 .bestsellers-item {
   background: #fff;
 }
+.bestsellers-wrapper {
+  position: relative;
+  overflow: hidden;
+}
 .bestsellers-img {
   border-radius: 15px 15px 0px 0px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: 500ms ease-in;
+  transition-property: transform;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+
+  border-radius: 15px 15px 0px 0px;
+  background: linear-gradient(
+    165deg,
+    rgba(253, 253, 255, 0.1) 3.97%,
+    rgba(8, 2, 21, 0) 109.76%
+  );
+  backdrop-filter: blur(7.5px);
+}
+.bestsellers-item:hover .overlay {
+  transform: translateY(0);
 }
 .bestsellers-caption {
   padding: 28px;
@@ -574,6 +678,9 @@ img {
   text-align: center;
   letter-spacing: -0.02em;
   color: #ffffff;
+
+  transition: 300ms ease-in;
+  transition-property: color;
 }
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
@@ -597,6 +704,9 @@ img {
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: #fff;
+
+  transition: 300ms ease-in;
+  transition-property: color;
 }
 .footer-menu-link:hover,
 .footer-menu-link:focus {
