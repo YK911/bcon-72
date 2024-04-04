@@ -36,6 +36,8 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <!-- Custom styles -->
+    <!-- <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" /> -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -45,7 +47,7 @@
         <nav class="header-nav">
           <a class="logo header-logo" href="./index.html">
             <span class="logo-accent">SIMPLY</span>&nbsp;CHOCOLATE
-            <svg class="logo-img" width="24" height="24">
+            <svg class="logo-img" width="21" height="21">
               <use href="./images/icons.svg#logo"></use>
             </svg>
           </a>
@@ -60,6 +62,11 @@
               <a class="header-nav-link" href="#reviews">Chocolate is loved</a>
             </li>
           </ul>
+          <button class="menu-btn" type="button">
+            <svg class="menu-btn-icon" width="28" height="28">
+              <use href="./images/icons.svg#burder-menu"></use>
+            </svg>
+          </button>
         </nav>
         <ul class="socials header-socials">
           <li class="socials-item">
@@ -107,7 +114,7 @@
     <!-- #endregion Header -->
     <main>
       <!-- #region Hero -->
-      <section class="hero">
+      <section class="hero hide">
         <div class="container">
           <h1 class="hero-title">
             Treat yourself or a loved one to our&nbsp;finest ingridients for a
@@ -184,49 +191,6 @@
                 detail is evident in every bite.
               </p>
             </li>
-            <!-- <li class="benefits-item">
-              <div class="benefits-wrapper">
-                <svg class="benefits-icon" width="32" height="32">
-                  <use href="./images/icons.svg#chocolate"></use>
-                </svg>
-              </div>
-              <h3 class="benefits-caption">Unsurpassed taste</h3>
-              <p class="benefits-desc">
-                Crafted with the finest quality cocoa beans and a dedication to
-                perfection, each bite is a decadent experience that simply
-                cannot be matched. Savor the richness and complexity of our
-                Unsurpassed Taste and discover a new level of chocolate bliss.
-              </p>
-            </li>
-            <li class="benefits-item">
-              <div class="benefits-wrapper">
-                <svg class="benefits-icon" width="32" height="32">
-                  <use href="./images/icons.svg#coin"></use>
-                </svg>
-              </div>
-              <h3 class="benefits-caption">Affordable price</h3>
-              <p class="benefits-desc">
-                Indulge in high-quality chocolate without breaking the bank with
-                Simply Chocolate's selection of affordable treats. Enjoy
-                mouth-watering truffles and velvety chocolate bars without
-                sacrificing taste or quality. Browse our selection and indulge
-                in affordable luxury today.
-              </p>
-            </li>
-            <li class="benefits-item">
-              <div class="benefits-wrapper">
-                <svg class="benefits-icon" width="32" height="32">
-                  <use href="./images/icons.svg#spoon"></use>
-                </svg>
-              </div>
-              <h3 class="benefits-caption">Own production</h3>
-              <p class="benefits-desc">
-                We take pride in our own production process, ensuring that every
-                step is carefully crafted to perfection. From selecting the
-                finest ingridients to handcrafting each piece, our attention to
-                detail is evident in every bite.
-              </p>
-            </li> -->
           </ul>
         </div>
       </section>
@@ -335,7 +299,7 @@
       </section>
       <!-- #endregion Ingridients -->
       <!-- #region Made -->
-      <section class="made" id="made">
+      <section class="made hide" id="made">
         <div class="container">
           <h2 class="made-title section-title">
             How it’s <span class="accent">made</span>?
@@ -382,7 +346,7 @@
       </section>
       <!-- #endregion Made -->
       <!-- #region Products -->
-      <section class="products">
+      <section class="products hide">
         <div class="container">
           <h2 class="products-title">
             Our <span class="accent">products</span>
@@ -489,7 +453,7 @@
       </section>
       <!-- #endregion Products -->
       <!-- #region Bestsellers -->
-      <section class="bestsellers">
+      <section class="bestsellers hide">
         <div class="container">
           <h2 class="bestsellers-title">
             <span class="accent">Top</span> sellers
@@ -555,7 +519,7 @@
       </section>
       <!-- #endregion Bestsellers -->
       <!-- #region Reviews -->
-      <section class="reviews" id="reviews">
+      <section class="reviews hide" id="reviews">
         <div class="container">
           <h2 class="reviews-title">
             <span class="accent">Chocolate</span> is loved
@@ -614,7 +578,7 @@
       <!-- #endregion Reviews -->
     </main>
     <!-- #region Footer -->
-    <footer class="footer">
+    <footer class="footer hide">
       <div class="container">
         <div class="footer-top">
           <p class="footer-slogan">
@@ -702,7 +666,7 @@
     </footer>
     <!-- #endregion Footer -->
     <!-- #region Modal -->
-    <div class="backdrop">
+    <div class="backdrop hide">
       <div class="modal">
         <button class="modal-btn" type="button">
           <svg class="modal-btn-icon" width="28" height="28">
@@ -800,5 +764,8 @@
       </div>
     </div>
     <!-- #endregion Modal -->
+    <!-- #region Mobile menu-->
+    <div class="mobile-menu"></div>
+    <!-- #endregion Mobile menu -->
   </body>
 </html>
